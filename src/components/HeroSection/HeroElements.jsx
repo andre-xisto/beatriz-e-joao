@@ -17,7 +17,7 @@ export const HeroImg = styled.img`
   position: relative;
 
   @media screen and (max-width: 768px) {
-    width: 100vw;
+    width: 80vw;
     height: auto;
   }
 `;
@@ -36,7 +36,7 @@ export const HeroText = styled.img`
   height: 20vh;
 
   @media screen and (max-width: 480px) {
-    max-width: 85%;
+    max-width: 95%;
     height: auto;
     padding-top: 4vh;
   }
