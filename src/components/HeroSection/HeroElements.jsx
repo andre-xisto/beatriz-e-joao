@@ -13,7 +13,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroImg = styled.img`
-  height: 50vh;
+  height: 40vh;
   position: relative;
 
   @media screen and (max-width: 768px) {
@@ -34,15 +34,11 @@ export const HeroContent = styled.div`
 
 export const HeroText = styled.img`
   height: 20vh;
-  //color: #000;
-  //font-size: 76px;
-  //text-align: center;
-  //font-family: 'Parisienne', cursive;
 
   @media screen and (max-width: 480px) {
     max-width: 85%;
     height: auto;
-    padding-top: 5vh;
+    padding-top: 4vh;
   }
 `;
 
@@ -63,10 +59,14 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 48px;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 24px;
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

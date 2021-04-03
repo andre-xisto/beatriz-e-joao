@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Image from '../../images/foto-b&j.png';
 import TextImage from '../../images/beatriz-&-joao.png';
-import { Button } from '../ButtonElement';
+import { Button, ButtonMailto } from '../ButtonElement';
 import {
   HeroContainer,
   HeroImg,
@@ -20,6 +21,10 @@ const HeroSection = () => {
     setHover(!hover);
   };
 
+  const onClickMailtoHandler = () => {
+    window.open('mailto:beatriz.choon@gmail.com?subject=Resposta a Convite de Casamento');
+  };
+
   return (
     <HeroContainer id='home'>
       <HeroContent>
@@ -28,7 +33,7 @@ const HeroSection = () => {
         <HeroP>10 de Julho de 2021</HeroP>
         <HeroBtnWrapper>
           <Button
-            to='signup'
+            onClick={onClickMailtoHandler}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
@@ -39,7 +44,7 @@ const HeroSection = () => {
             exact='true'
             offset={-80}
           >
-            Mais Pormenores {hover ? <ArrowForward /> : <ArrowRight />}
+            Confirmar até 10 de Maio {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

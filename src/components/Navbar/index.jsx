@@ -53,7 +53,7 @@ const Navbar = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                About
+                Casamento
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                Discover
+                Transporte
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -77,7 +77,19 @@ const Navbar = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                Services
+                Alojamento
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to='discover'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+              >
+                Lista de Casamento
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -89,7 +101,7 @@ const Navbar = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                Sign Up
+                Informações COVID
               </NavLinks>
             </NavItem>
           </NavMenu>

@@ -19,22 +19,27 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to='about' onClick={toggle}>
-            About
+            Casamento
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
           <SidebarLink to='discover' onClick={toggle}>
-            Discover
+            Transporte
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
           <SidebarLink to='services' onClick={toggle}>
-            Services
+            Alojamento
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
-          <SidebarLink to='signup' onClick={toggle}>
-            Sign Up
+          <SidebarLink to='services' onClick={toggle}>
+            Lista de Casamento
+          </SidebarLink>
+        </SidebarMenu>
+        <SidebarMenu>
+          <SidebarLink to='services' onClick={toggle}>
+            Informações COVID
           </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
