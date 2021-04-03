@@ -1,5 +1,6 @@
 export const cerimonia = {
   id: 'cerimonia',
+  wrapperHeight: 'auto',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -20,6 +21,7 @@ export const cerimonia = {
 
 export const recepcao = {
   id: 'recepcao',
+  wrapperHeight: 'auto',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -40,6 +42,7 @@ export const recepcao = {
 
 export const transporte = {
   id: 'transporte',
+  wrapperHeight: 'auto',
   lightBg: false,
   lightText: false,
   lightTextDesc: false,
@@ -48,7 +51,7 @@ export const transporte = {
   description1: 'Contactar o Sr. Duarte Fernandes.',
   phone: '(+351) 915 284 433',
   description2:
-    'Disponibilizam equipas de motoristas profissionais que esperam no local para o levar a casa no seu carro.',
+    'Equipas de motoristas profissionais que esperam por si no local para o levar a casa no seu próprio carro.',
   buttonLabel: 'Agendar',
   buttonCoords: 'tel:+351915284433',
   imgStart: false,

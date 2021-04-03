@@ -8,24 +8,26 @@ import {
   ServicesH2,
   ServicesP
 } from './ServicesElements';
-import Icon1 from '../../images/svg-2.svg';
-import Icon2 from '../../images/svg-1.svg';
+import Icon1 from '../../images/quinta-machados.jpg';
+import Icon2 from '../../images/ninho-saloio.jpg';
 import Icon3 from '../../images/svg-3.svg';
 
 const Services = () => {
   return (
-    <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
+    <ServicesContainer id='services'>
+      <ServicesH1>Onde Ficar</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Reduce Expenses</ServicesH2>
-          <ServicesP>We help reduce your fees andincrease your overall revenue.</ServicesP>
+          <ServicesH2>Quinta dos Machados</ServicesH2>
+          <ServicesP>
+            A apenas 3.6km da Casa de Reguengos. Disfrute da Natureza, Piscina e Spa.
+          </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Virtual Offices</ServicesH2>
-          <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+          <ServicesH2>Ninho Saloio</ServicesH2>
+          <ServicesP>Perto da Venda do Pinheiro. Volte a reencontrar-se com a natureza.</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />

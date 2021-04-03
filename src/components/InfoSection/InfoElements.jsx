@@ -7,14 +7,14 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#fffefd')};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 50px 0 0 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 75vh;
+  height: ${({ wrapperHeight }) => wrapperHeight};
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
