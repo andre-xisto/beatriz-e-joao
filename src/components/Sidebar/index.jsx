@@ -18,27 +18,27 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>
+          <SidebarLink to='casamento' onClick={toggle}>
             Casamento
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
-          <SidebarLink to='discover' onClick={toggle}>
+          <SidebarLink to='transporte' onClick={toggle}>
             Transporte
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
-          <SidebarLink to='services' onClick={toggle}>
-            Alojamento
+          <SidebarLink to='alojamento' onClick={toggle}>
+            Onde Ficar
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
-          <SidebarLink to='services' onClick={toggle}>
+          <SidebarLink to='lista' onClick={toggle}>
             Lista de Casamento
           </SidebarLink>
         </SidebarMenu>
         <SidebarMenu>
-          <SidebarLink to='services' onClick={toggle}>
+          <SidebarLink to='covid' onClick={toggle}>
             Informações COVID
           </SidebarLink>
         </SidebarMenu>

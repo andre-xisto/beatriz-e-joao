@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+import { cerimonia, recepcao, transporte } from '../components/InfoSection/Data';
 import Services from '../components/ServicesSection';
 import InviteSection from '../components/InviteSection/index';
 import Footer from '../components/Footer';
@@ -20,10 +20,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
+      <InfoSection {...cerimonia} />
+      <InfoSection {...recepcao} />
+      <InfoSection {...transporte} />
       <Services />
-      <InfoSection {...homeObjThree} />
       <Footer />
     </>
   );

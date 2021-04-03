@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../ButtonElement';
 import {
   InfoContainer,
@@ -10,9 +10,15 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  Address1,
+  Address2,
+  Phone,
   BtnWrap,
   ImgWrap,
-  Image
+  Image,
+  ArrowForward,
+  ArrowRight,
+  PhoneIcon
 } from './InfoElements';
 
 const InfoSection = ({
@@ -22,15 +28,34 @@ const InfoSection = ({
   topLine,
   lightText,
   headline,
+  address1,
+  address2,
+  phone,
   darkText,
-  description,
+  description1,
+  description2,
   buttonLabel,
+  buttonCoords,
   img,
   alt,
   primary,
   dark,
   dark2
 }) => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
+  // const icon = () => {
+  //   IoIosCall;
+  // };
+
+  const onClickHandler = () => {
+    window.open(buttonCoords);
+  };
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -40,20 +65,28 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>{description1}</Subtitle>
+                <Subtitle darkText={darkText}>{description2}</Subtitle>
+                <Phone darkText={darkText}>
+                  <PhoneIcon /> {phone}
+                </Phone>
+                <Address1 darkText={darkText}>{address1}</Address1>
+                <Address2 darkText={darkText}>{address2}</Address2>
                 <BtnWrap>
                   <Button
-                    to="home"
+                    onClick={onClickHandler}
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
                     smooth={true}
                     duration={500}
                     spy={true}
-                    exact="true"
+                    exact='true'
                     offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                   >
-                    {buttonLabel}
+                    {buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>
                 </BtnWrap>
               </TextWrapper>

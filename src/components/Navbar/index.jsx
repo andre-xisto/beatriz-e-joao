@@ -46,7 +46,7 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
-                to='about'
+                to='cerimonia'
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to='discover'
+                to='transporte'
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -70,19 +70,19 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to='services'
+                to='alojamento'
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact='true'
                 offset={-80}
               >
-                Alojamento
+                Onde Ficar
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                to='discover'
+                to='lista'
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -94,7 +94,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to='signup'
+                to='covid'
                 smooth={true}
                 duration={500}
                 spy={true}

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Image from '../../images/foto-b&j.png';
 import TextImage from '../../images/beatriz-&-joao.png';
-import { Button, ButtonMailto } from '../ButtonElement';
+import { Button } from '../ButtonElement';
 import {
   HeroContainer,
   HeroImg,
