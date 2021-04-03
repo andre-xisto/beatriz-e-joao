@@ -48,14 +48,14 @@ export const transporte = {
   lightTextDesc: false,
   topLine: 'Transporte',
   headline: 'Serviço de Drivers',
-  description1: 'Contactar o Sr. Duarte Fernandes.',
-  phone: '(+351) 915 284 433',
-  description2:
+  description1:
     'Equipas de motoristas profissionais que esperam por si no local para o levar a casa no seu próprio carro.',
+  description2: 'Contactar o Sr. Duarte Fernandes.',
+  phone: '(+351) 915 284 433',
   buttonLabel: 'Agendar',
   buttonCoords: 'tel:+351915284433',
   imgStart: false,
-  img: require('../../images/driver.svg').default,
+  img: require('../../images/driver.png').default,
   alt: 'drivers',
   dark: false,
   primary: true,
