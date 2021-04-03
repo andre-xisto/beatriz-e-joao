@@ -48,10 +48,6 @@ const InfoSection = ({
     setHover(!hover);
   };
 
-  // const icon = () => {
-  //   IoIosCall;
-  // };
-
   const onClickHandler = () => {
     window.open(buttonCoords);
   };
@@ -67,9 +63,13 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description1}</Subtitle>
                 <Subtitle darkText={darkText}>{description2}</Subtitle>
-                <Phone darkText={darkText}>
-                  <PhoneIcon /> {phone}
-                </Phone>
+                {{ phone }.phone ? (
+                  <Phone darkText={darkText}>
+                    <PhoneIcon /> {phone}
+                  </Phone>
+                ) : (
+                  ''
+                )}
                 <Address1 darkText={darkText}>{address1}</Address1>
                 <Address2 darkText={darkText}>{address2}</Address2>
                 <BtnWrap>
