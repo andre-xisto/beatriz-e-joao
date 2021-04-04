@@ -3,10 +3,9 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { cerimonia, recepcao, transporte, covid } from '../components/InfoSection/Data';
+import { cerimonia, recepcao, transporte, lista, covid } from '../components/InfoSection/Data';
 import Alojamento from '../components/AlojamentoSection';
-import Lista from '../components/ListaSection';
-import Footer from '../components/Footer';
+//import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +23,9 @@ const Home = () => {
       <InfoSection {...recepcao} />
       <InfoSection {...transporte} />
       <Alojamento />
-      <Lista />
+      <InfoSection {...lista} />
       <InfoSection {...covid} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

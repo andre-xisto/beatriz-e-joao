@@ -62,6 +62,28 @@ export const transporte = {
   darkText: true
 };
 
+export const lista = {
+  id: 'lista',
+  wrapperHeight: '60vh',
+  lightBg: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Lista de Casamento',
+  headline: 'Como oferecer?',
+  description1:
+    'A vossa presença é o nosso melhor presente! No entanto, podem ajudar-nos nesta nova etapa da nossa vida através do IBAN:',
+  //description2: 'PT50 0023 0000 4561 3181 6439 4',
+  //phone: '(+351) 915 284 433',
+  buttonLabel: 'PT50 0023 0000 4561 3181 6439 4',
+  //buttonCoords: 'tel:+351915284433',
+  imgStart: true,
+  img: require('../../images/lista-casamento.png').default,
+  alt: 'drivers',
+  dark: false,
+  primary: true,
+  darkText: true
+};
+
 export const covid = {
   id: 'covid',
   wrapperHeight: '60vh',
@@ -73,7 +95,7 @@ export const covid = {
   description1: 'Mais informações em breve.',
   //description2: 'Contactar o Sr. Duarte Fernandes.',
   //phone: '(+351) 915 284 433',
-  //buttonLabel: 'Agendar',
+  buttonLabel: ' ',
   //buttonCoords: 'tel:+351915284433',
   imgStart: false,
   img: require('../../images/covid.png').default,

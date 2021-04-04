@@ -49,8 +49,11 @@ const InfoSection = ({
     setHover(!hover);
   };
 
-  const onClickHandler = () => {
-    window.open(buttonCoords);
+  const onClickHandler = buttonCoords => {
+    //window.open(buttonCoords);
+    if (buttonCoords) {
+      window.open(buttonCoords);
+    }
   };
 
   return (
@@ -73,23 +76,27 @@ const InfoSection = ({
                 )}
                 <Address1 darkText={darkText}>{address1}</Address1>
                 <Address2 darkText={darkText}>{address2}</Address2>
-                <BtnWrap>
-                  <Button
-                    onClick={onClickHandler}
-                    onMouseEnter={onHover}
-                    onMouseLeave={onHover}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
-                  </Button>
-                </BtnWrap>
+                {{ buttonLabel }.buttonLabel ? (
+                  <BtnWrap>
+                    <Button
+                      onClick={onClickHandler}
+                      onMouseEnter={onHover}
+                      onMouseLeave={onHover}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact='true'
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      {buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
+                    </Button>
+                  </BtnWrap>
+                ) : (
+                  ' '
+                )}
               </TextWrapper>
             </Column1>
             <Column2>
