@@ -1,6 +1,6 @@
 export const cerimonia = {
   id: 'cerimonia',
-  wrapperHeight: 'auto',
+  wrapperHeight: '50vh',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -21,7 +21,7 @@ export const cerimonia = {
 
 export const recepcao = {
   id: 'recepcao',
-  wrapperHeight: 'auto',
+  wrapperHeight: '50vh',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -42,7 +42,7 @@ export const recepcao = {
 
 export const transporte = {
   id: 'transporte',
-  wrapperHeight: 'auto',
+  wrapperHeight: '60vh',
   lightBg: false,
   lightText: false,
   lightTextDesc: false,
@@ -56,6 +56,27 @@ export const transporte = {
   buttonCoords: 'tel:+351915284433',
   imgStart: false,
   img: require('../../images/driver.png').default,
+  alt: 'drivers',
+  dark: false,
+  primary: true,
+  darkText: true
+};
+
+export const covid = {
+  id: 'covid',
+  wrapperHeight: '60vh',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Informações COVID',
+  headline: 'Concelhos e Recomendações',
+  description1: 'Mais informações em breve.',
+  //description2: 'Contactar o Sr. Duarte Fernandes.',
+  //phone: '(+351) 915 284 433',
+  //buttonLabel: 'Agendar',
+  //buttonCoords: 'tel:+351915284433',
+  imgStart: false,
+  img: require('../../images/covid.png').default,
   alt: 'drivers',
   dark: false,
   primary: true,

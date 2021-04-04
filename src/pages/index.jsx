@@ -3,9 +3,9 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { cerimonia, recepcao, transporte } from '../components/InfoSection/Data';
-import Services from '../components/ServicesSection';
-import InviteSection from '../components/InviteSection/index';
+import { cerimonia, recepcao, transporte, covid } from '../components/InfoSection/Data';
+import Alojamento from '../components/AlojamentoSection';
+import Lista from '../components/ListaSection';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -23,7 +23,9 @@ const Home = () => {
       <InfoSection {...cerimonia} />
       <InfoSection {...recepcao} />
       <InfoSection {...transporte} />
-      <Services />
+      <Alojamento />
+      <Lista />
+      <InfoSection {...covid} />
       <Footer />
     </>
   );

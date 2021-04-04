@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,11 +9,8 @@ export const ServicesContainer = styled.div`
   background-color: #f9f9f9;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: auto;
+    padding: 60px 0;
   }
 `;
 
@@ -30,6 +27,7 @@ export const ServicesH1 = styled.h1`
 export const ServicesH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #c3ac67;
 `;
 
 export const ServicesP = styled.p`
