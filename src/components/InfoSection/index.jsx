@@ -50,8 +50,11 @@ const InfoSection = ({
   };
 
   const onClickHandler = url => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    if (newWindow) newWindow.opener = null;
+    if (url) {
+      const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+      if (newWindow) newWindow.opener = null;
+    } else {
+    }
   };
 
   return (
