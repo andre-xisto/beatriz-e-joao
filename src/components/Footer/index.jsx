@@ -14,11 +14,8 @@ import {
   SocialMedia,
   SocialMediaWrapper,
   SocialLogo,
-  WebsiteRights,
-  SocialIcons,
-  SocialIconLink
+  WebsiteRights
 } from './FooterElements';
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   const toggleHome = () => {

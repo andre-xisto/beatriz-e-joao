@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
@@ -13,6 +12,10 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media screen and (max-width: 820px) {
+    padding: 24px;
+  }
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -20,7 +23,7 @@ export const FooterLinksContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 820px) {
-    padding-top: 32px;
+    //padding-top: 32px;
   }
 `;
 
