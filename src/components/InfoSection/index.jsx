@@ -49,11 +49,9 @@ const InfoSection = ({
     setHover(!hover);
   };
 
-  const onClickHandler = buttonCoords => {
-    //window.open(buttonCoords);
-    if (buttonCoords) {
-      window.open(buttonCoords);
-    }
+  const onClickHandler = url => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
   };
 
   return (
@@ -79,7 +77,7 @@ const InfoSection = ({
                 {{ buttonLabel }.buttonLabel ? (
                   <BtnWrap>
                     <Button
-                      onClick={onClickHandler}
+                      onClick={() => onClickHandler(buttonCoords)}
                       onMouseEnter={onHover}
                       onMouseLeave={onHover}
                       smooth={true}

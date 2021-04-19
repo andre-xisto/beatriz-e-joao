@@ -31,7 +31,7 @@ export const recepcao = {
   address1: 'R. Nossa Senhora da Memória,',
   address2: '2665-419 Vila Franca do Rosário',
   buttonLabel: 'Direcções',
-  buttonCoords: 'http://maps.google.com/?q=House%20Reguengos',
+  buttonCoords: 'https://maps.google.com/?q=House%20Reguengos',
   imgStart: true,
   img: require('../../images/casa-reguengos.png').default,
   alt: 'casa de reguengos',
