@@ -1,5 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
+import Logo from '../../images/logo-BJ_white.png';
 
 import {
   FooterContainer,
@@ -9,6 +10,7 @@ import {
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
+  LogoBJ,
   SocialMedia,
   SocialMediaWrapper,
   SocialLogo,
@@ -29,62 +31,33 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
+              <FooterLinkTitle>Confirmações</FooterLinkTitle>
+              <FooterLink to='/signin'>beatriz.choon@gmail.com</FooterLink>
+              <FooterLink to='/signin'>joaoncdferreira@gmail.com</FooterLink>
+              <FooterLink to='/signin'>Até 10 de Maio</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Contact us</FooterLinkTitle>
-              <FooterLink to="/signin">Contact</FooterLink>
-              <FooterLink to="/signin">Support</FooterLink>
-              <FooterLink to="/signin">Destinations</FooterLink>
-              <FooterLink to="/signin">Sponsorships</FooterLink>
+              <FooterLinkTitle>IBAN</FooterLinkTitle>
+              <FooterLink to='/signin'>PT50 0023 0000 4561 3181 6439 4</FooterLink>
+              <FooterLink to='/signin'>Activobank</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/signin">Submit Video</FooterLink>
-              <FooterLink to="/signin">Ambassadors</FooterLink>
-              <FooterLink to="/signin">Agency</FooterLink>
-              <FooterLink to="/signin">Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="/signin">Instagram</FooterLink>
-              <FooterLink to="/signin">Facebook</FooterLink>
-              <FooterLink to="/signin">Youtube</FooterLink>
-              <FooterLink to="/signin">Twitter</FooterLink>
+              <FooterLinkTitle>Contactos</FooterLinkTitle>
+              <FooterLink to='/signin'>Madrinha: XXX XXX XXX</FooterLink>
+              <FooterLink to='/signin'>Padrinho: XXX XXX XXX</FooterLink>
+              <FooterLink to='/signin'>Drivers: 915 284 443</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrapper>
-            <SocialLogo to="/" onClick={toggleHome}>
-              dolla
+            <SocialLogo to='/' onClick={toggleHome}>
+              <LogoBJ src={Logo} />
             </SocialLogo>
-            <WebsiteRights>dolla* {new Date().getFullYear()} All rights reserved.</WebsiteRights>
-            <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria_label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria_label="Instagram">
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria_label="Youtube">
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria_label="Twitter">
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria_label="LinkedIn">
-                <FaLinkedin />
-              </SocialIconLink>
-            </SocialIcons>
           </SocialMediaWrapper>
+          <WebsiteRights>10 de Julho de 2021</WebsiteRights>
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>

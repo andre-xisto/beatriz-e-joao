@@ -64,6 +64,15 @@ export const FooterLink = styled.div`
     color: #01bf71;
     transition: 0.3s ease-out;
   }
+
+  @media screen and (max-width: 420px) {
+    font-size: 0.65rem;
+  }
+`;
+
+export const LogoBJ = styled.img`
+  height: 60px;
+  margin: 0 20px;
 `;
 
 export const SocialMedia = styled.section`
@@ -97,7 +106,16 @@ export const SocialLogo = styled.div`
 
 export const WebsiteRights = styled.div`
   color: #fff;
-  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 0 auto;
+  font-size: 0.8rem;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
 `;
 
 export const SocialIcons = styled.div`

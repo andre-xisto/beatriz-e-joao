@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { cerimonia, recepcao, transporte, lista, covid } from '../components/InfoSection/Data';
 import Alojamento from '../components/AlojamentoSection';
-//import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const Home = () => {
       <Alojamento />
       <InfoSection {...lista} />
       <InfoSection {...covid} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
